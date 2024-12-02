@@ -14,8 +14,8 @@ clk = 1'b0;
 always
 #1 clk=~clk;
 initial begin
-$fsdbDumpfile("nanochip.fsdb"); 
-$fsdbDumpvars(0, nanochip_tb);
+//$fsdbDumpfile("nanochip.fsdb"); 
+//$fsdbDumpvars(0, nanochip_tb);
 $dumpfile("nanochip.vcd");
 $dumpvars(0, nanochip_tb);
 EN = 1'b0;
